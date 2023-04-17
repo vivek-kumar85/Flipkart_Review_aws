@@ -21,9 +21,8 @@ To run tests, run the following command
 ```
 
 
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+## Screen![Screenshot 2023-04-17 193521](https://user-images.githubusercontent.com/91729976/232576345-912207dc-d7a0-4f08-91d1-4fa4540f348f.png)
+shots
 
 
 ## Run Locally
