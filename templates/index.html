@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel="shortcut icon" href="{{url_for('static', filename='img/favicon.png')}}" type="image/x-icon">
+<link rel="stylesheet" href="{{url_for('static', filename='css/new.css')}}">
+<title>Flipkart Review</title>
+{% endblock %}
+
+{% block body %}
+
+<header id="head">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="{{url_for('static', filename='img/favicon.png')}}" alt="Flipkart"> <img
+        src="{{url_for('static', filename='img/flp.png')}}" style="padding:0; margin: 0;" alt="Flipkart">
+    </div>
+
+  </nav>
+</header>
+
+<div id="FullScreenOverlay" class="overlay" style="display: block;">
+  <div class="overlay-content">
+    <form action="/review" method="POST">
+      <input type="text" name="content" id="content" placeholder="Search Product...">
+      <input class="submit_btn" type="submit" value="Search">
+    </form>
+  </div>
+</div>
+
+
+<div class="container">
+  <form action="/review" method="POST">
+    <div class="search_box">
+      <input type="text" name="content" id="content"
+        placeholder="Search for any Electronic Products, brands and more..">
+      <div class="ser">
+        <button style="background: none; border: none; margin: 1rem;" type="submit"> <img
+            src="{{url_for('static', filename='img/search.png')}}" alt="Search" style="width: 27px;"> </button>
+      </div>
+    </div>
+
+
+  </form>
+
+  <div class="express">
+    <p>Find product reviews related to electronic devices such as smartphones, tablets, large laptops, etc. Look for
+      ratings, detailed descriptions, and photos of the products. Read reviews from other customers to get an idea of
+      the product's features, performance, and reliability.
+      <br>
+      <br>
+      Compare different products to find the best one for you. Consider the cost, warranty, customer service, and other
+      factors when making your decision. Select a product that meets your needs and budget. Buy it and enjoy your new
+      device 🤘🏻😉
+    </p>
+  </div>
+</div>
+
+
+<div class="mtech">
+
+  <div class="line line-1">
+    <div class="wave wave1" style="background-image: url({{url_for('static', filename='img/1.png')}});"></div>
+  </div>
+
+  <div class="line line-2">
+    <div class="wave wave2" style="background-image: url({{url_for('static', filename='img/2.png')}});"></div>
+  </div>
+
+  <div class="line line-3">
+    <div class="wave wave3" style="background-image: url({{url_for('static', filename='img/3.png')}});"></div>
+  </div>
+</div>
+
+<div class="info-txt-ap">
+  &copy; 2023 Vivek Shriwas - All rights reserved.
+</div>
+
+
+
+<script>
+  function openSearchHero() {
+    document.getElementById("FullScreenOverlay").style.display = "block";
+  }
+
+  function closeSearchHero() {
+    document.getElementById("FullScreenOverlay").style.display = "none";
+  }
+
+</script>
+<!-- <h5 style="position:fixed;bottom:0;left: 50%;z-index:999" class=".text-muted copyright">&copy; Vivek Kumar Shriwas </h5> -->
+
+{% endblock %}

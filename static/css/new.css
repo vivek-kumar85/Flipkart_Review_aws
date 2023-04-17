@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins", sans-serif; */
+  }
+  
+  body {
+    background: rgb(52, 46, 147);
+    background: linear-gradient(
+      90deg,
+      rgba(52, 46, 147, 1) 0%,
+      rgba(29, 169, 205, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+  }
+  
+  #head {
+    height: 70px;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  
+  .navbar {
+        padding-top: 44px;
+    display: flex;
+        z-index: 999;
+      position: relative;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 8vw;
+    padding: 0 37px;
+  }
+  
+  .navbar ul {
+    height: 8vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .text {
+    padding: 26px 410px;
+  }
+  
+  .leo {
+    font-size: 34px;
+    font-weight: 800;
+    font-family: monospace;
+  }
+  
+  .ser {
+    position: relative;
+    bottom: -2px;
+    left: -87px;
+  }
+  
+  .express {
+    margin-top: -26px;
+  }
+  
+  p {
+  
+    padding: 0px 35px;
+    font-size: 19px;
+    letter-spacing: 0.3px;
+    line-height: 22px;
+    color: #fff;
+    text-align: center;
+        position: relative;
+      left: -35px;
+  }
+  
+  .mtech {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .line {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    background: blueviolet;
+  
+  /* Color se idhar se change karr na */
+     background: rgb(52, 46, 147);
+    background: linear-gradient(
+      90deg,
+      rgba(52, 46, 147, 1) 0%,
+      rgba(29, 169, 205, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  
+  }
+  
+  ul {
+    z-index: 99;
+    position: absolute;
+    list-style: none;
+    right: 30px;
+  }
+  
+  ul li {
+    display: inline-block;
+    margin: 15px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: quebec;
+    font-size: 20px;
+  }
+  
+  .mid-text {
+    position: absolute;
+    z-index: 99;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .mid-text h2 {
+    color: #fff;
+    font-family: quebec;
+    font-size: 50px;
+  }
+  
+  .line-1 {
+    z-index: 15;
+    opacity: 0.5;
+  }
+  
+  .line-2 {
+    z-index: 10;
+    opacity: 0.7;
+  }
+  
+  .line-3 {
+    z-index: 5;
+  }
+  
+  .wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+  }
+  
+  .wave1 {
+    -webkit-background-size: 50% 80px;
+    background-size: 50% 80px;
+  }
+  
+  .wave2 {
+    -webkit-background-size: 50% 100px;
+    background-size: 50% 100px;
+    animation: animate 12s linear infinite;
+  }
+  
+  .wave3 {
+    -webkit-background-size: 50% 80px;
+    background-size: 50% 80px;
+    animation: animate 18s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.5);
+    }
+    100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1);
+    }
+  }
+  
+  .search_box {
+    display: flex;
+    padding: 197px 44px;
+  }
+  
+  .search_box input {
+    width: 56vw;
+    height: 6vh;
+    margin: auto;
+    padding: 0 12px;
+    border: 2px solid white;
+    border-radius: 23px;
+  }
+  
+  .search_btn {
+    display: flex;
+    width: 55px;
+    position: relative;
+    top: 10px;
+    right: 56px;
+    height: 30px;
+  }
+  
+  .info-txt-ap {
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 140px;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    z-index: 99;
+  }
+  
+  /* Emojii Csss */
+  /* 
+  .vue1{
+        width: 162px;
+      position: absolute;
+      z-index: 99;
+      top: 233px;
+      left: 73px;
+  }
+  
+  .vue2{
+        width: 101px;
+      position: absolute;
+      z-index: 99;
+      top: 425px;
+      rotate: -17deg;
+      left: 604px;
+  
+  }
+  
+  .vue3{
+           width: 93px;
+      position: absolute;
+      z-index: 99;
+      top: 251px;
+      rotate: -49deg;
+      left: 686px;
+  
+  }
+  
+  .vue5{
+          width: 73px;
+      position: absolute;
+      z-index: 99;
+      top: 432px;
+      rotate: -10deg;
+      left: 239px;
+  
+  }
+  
+  .vue7{
+           width: 56px;
+      position: absolute;
+      z-index: 99;
+      top: 177px;
+      rotate: -2deg;
+      left: 402px;
+  
+  }
+  
+  .vue8{
+           width: 58px;
+      position: absolute;
+      z-index: 99;
+      top: 559px;
+      rotate: -14deg;
+      left: 446px;
+  
+  } */
