@@ -21,10 +21,15 @@ To run tests, run the following command
 ```
 
 
-## Screenshots 
+## Screenshots:
 
 ## search page
 ![Screenshot 2023-04-17 193521](https://user-images.githubusercontent.com/91729976/232576345-912207dc-d7a0-4f08-91d1-4fa4540f348f.png)
+
+
+## Result page 
+![Screenshot (231)](https://user-images.githubusercontent.com/91729976/232578148-c23385d6-5b8e-410a-8e93-bd377701c972.png)
+
 
 ## Run Locally
 
